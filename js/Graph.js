@@ -241,7 +241,7 @@ function drawAllGraphs() {
     canvasContext.font = "20px Bogle";
     canvasContext.fillStyle = '#1055b7';
     canvasContext.textAlign = 'center';
-    canvasContext.fillText("Intentar otra vez", canvas.width / 2, canvas.height - 20);
+    canvasContext.fillText("Try Again, Compare!", canvas.width / 2, canvas.height - 20);
 
 }
 

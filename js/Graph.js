@@ -204,11 +204,11 @@ function drawAllGraphs() {
         canvasContext.textAlign = 'right';
         canvasContext.font = "10px Bogle";
         canvasContext.fillStyle = "black";
-        canvasContext.fillText(allPercentTestingNegative[length - j] + "% Saludable", emojiKeyPanelWidth - 10, graphPanelHeight * (j) + (emojiKeyPanelHeight * 1.66));
-        canvasContext.fillText(allPercentTestingPositive[length - j] + "% Enfermos", emojiKeyPanelWidth - 10, graphPanelHeight * (j) + (emojiKeyPanelHeight * 2.66));
+        canvasContext.fillText(allPercentTestingNegative[length - j] + "% Healthy", emojiKeyPanelWidth - 10, graphPanelHeight * (j) + (emojiKeyPanelHeight * 1.66));
+        canvasContext.fillText(allPercentTestingPositive[length - j] + "% Infected", emojiKeyPanelWidth - 10, graphPanelHeight * (j) + (emojiKeyPanelHeight * 2.66));
         canvasContext.fillStyle = "white";
-        canvasContext.fillText(allPercentRecovered[length - j] + "% Recuperado", emojiKeyPanelWidth - 10, graphPanelHeight * (j) + (emojiKeyPanelHeight * 0.66));
-        canvasContext.fillText(allPercentDead[length - j] + "% Fallecido", emojiKeyPanelWidth - 10, graphPanelHeight * (j) + (emojiKeyPanelHeight * 3.66));
+        canvasContext.fillText(allPercentRecovered[length - j] + "% Recovered", emojiKeyPanelWidth - 10, graphPanelHeight * (j) + (emojiKeyPanelHeight * 0.66));
+        canvasContext.fillText(allPercentDead[length - j] + "% Died", emojiKeyPanelWidth - 10, graphPanelHeight * (j) + (emojiKeyPanelHeight * 3.66));
 
         //Draw lines to seperate graphs
         canvasContext.lineWidth = 1;
@@ -222,8 +222,8 @@ function drawAllGraphs() {
         canvasContext.textAlign = 'left';
         canvasContext.font = "10px Bogle";
         canvasContext.fillStyle = "#1055b7";
-        canvasContext.fillText("Capacidad", emojiKeyPanelWidth + 3, thresholdLineY - 2);
-        canvasContext.fillText("Hospitalaria", emojiKeyPanelWidth + 3, thresholdLineY + 8);
+        canvasContext.fillText("Hospital", emojiKeyPanelWidth + 3, thresholdLineY - 2);
+        canvasContext.fillText("Capacity", emojiKeyPanelWidth + 3, thresholdLineY + 8);
 
     }
 
@@ -252,12 +252,12 @@ function drawBanner() {
         canvasContext.textAlign = 'center';
         canvasContext.font = "16px Bogle";
         canvasContext.fillStyle = "white";
-        canvasContext.fillText("⚠️ PELIGRO: ¡Capacidad Hospitalaria Excedida! ⚠️", width / 2, height - graphPanelHeight - (bannerHeight * 0.25));
+        canvasContext.fillText("⚠️ DANGER: Exceeded Hospital Capacity! ⚠️", width / 2, height - graphPanelHeight - (bannerHeight * 0.25));
     } else {
         colorRect(0, height - graphPanelHeight - bannerHeight, width, bannerHeight, '#45bcd8');
         canvasContext.textAlign = 'center';
         canvasContext.font = "14px Bogle";
         canvasContext.fillStyle = "white";
-        canvasContext.fillText("¡Aplana la curva enmascarando, lavando y distanciando!", width / 2, height - graphPanelHeight - (bannerHeight * 0.30));
+        canvasContext.fillText("¡Flatten the Curve! Wear masks, keep clean, and keep your distance!", width / 2, height - graphPanelHeight - (bannerHeight * 0.30));
     }
 }

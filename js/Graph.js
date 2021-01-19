@@ -142,11 +142,11 @@ function drawGraph() {
     canvasContext.textAlign = 'right';
     canvasContext.font = "10px Bogle";
     canvasContext.fillStyle = "#1055b7";
-    canvasContext.fillText(percentTestingNegative + "% Saludable", emojiKeyPanelWidth - 10, height - (emojiKeyPanelHeight * 2.35));
-    canvasContext.fillText(percentTestingPositive + "% Enfermos", emojiKeyPanelWidth - 10, height - (emojiKeyPanelHeight * 1.35));
+    canvasContext.fillText(percentTestingNegative + "% Healthy", emojiKeyPanelWidth - 10, height - (emojiKeyPanelHeight * 2.35));
+    canvasContext.fillText(percentTestingPositive + "% Infected", emojiKeyPanelWidth - 10, height - (emojiKeyPanelHeight * 1.35));
     canvasContext.fillStyle = "white";
-    canvasContext.fillText(percentRecovered + "% Recuperado", emojiKeyPanelWidth - 10, height - (emojiKeyPanelHeight * 3.35));
-    canvasContext.fillText(percentDead + "% Fallecido", emojiKeyPanelWidth - 10, height - (emojiKeyPanelHeight * 0.35));
+    canvasContext.fillText(percentRecovered + "% Recovered", emojiKeyPanelWidth - 10, height - (emojiKeyPanelHeight * 3.35));
+    canvasContext.fillText(percentDead + "% Dead", emojiKeyPanelWidth - 10, height - (emojiKeyPanelHeight * 0.35));
 
 }
 
@@ -208,7 +208,7 @@ function drawAllGraphs() {
         canvasContext.fillText(allPercentTestingPositive[length - j] + "% Infected", emojiKeyPanelWidth - 10, graphPanelHeight * (j) + (emojiKeyPanelHeight * 2.66));
         canvasContext.fillStyle = "white";
         canvasContext.fillText(allPercentRecovered[length - j] + "% Recovered", emojiKeyPanelWidth - 10, graphPanelHeight * (j) + (emojiKeyPanelHeight * 0.66));
-        canvasContext.fillText(allPercentDead[length - j] + "% Died", emojiKeyPanelWidth - 10, graphPanelHeight * (j) + (emojiKeyPanelHeight * 3.66));
+        canvasContext.fillText(allPercentDead[length - j] + "% Dead", emojiKeyPanelWidth - 10, graphPanelHeight * (j) + (emojiKeyPanelHeight * 3.66));
 
         //Draw lines to seperate graphs
         canvasContext.lineWidth = 1;

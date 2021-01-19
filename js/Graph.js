@@ -258,6 +258,6 @@ function drawBanner() {
         canvasContext.textAlign = 'center';
         canvasContext.font = "14px Bogle";
         canvasContext.fillStyle = "white";
-        canvasContext.fillText("¡Flatten the Curve! Wear masks, keep clean, and keep your distance!", width / 2, height - graphPanelHeight - (bannerHeight * 0.30));
+        canvasContext.fillText("Flatten the Curve! See how different techniques help save lives!", width / 2, height - graphPanelHeight - (bannerHeight * 0.30));
     }
 }

@@ -45,7 +45,7 @@ class Button {
 
                 canvasContext.fillStyle = "white";
                 canvasContext.font = "12px Bogle";
-                canvasContext.fillText("Distanciamiento Social", this.x, this.y + 20);
+                canvasContext.fillText("Social Distancing", this.x, this.y + 20);
 
                 if (this.isEnabled) { //draw social distancing "On" indicator
 

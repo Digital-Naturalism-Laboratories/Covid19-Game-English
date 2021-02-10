@@ -116,8 +116,8 @@ function drawGraph() {
     canvasContext.textAlign = 'left';
     canvasContext.font = "10px Bogle";
     canvasContext.fillStyle = "#1055b7";
-    canvasContext.fillText("Capacidad", emojiKeyPanelWidth + 3, thresholdLineY - 2);
-    canvasContext.fillText("Hospitalaria", emojiKeyPanelWidth + 3, thresholdLineY + 8);
+    canvasContext.fillText("Hospital", emojiKeyPanelWidth + 3, thresholdLineY - 2);
+    canvasContext.fillText("Capacity", emojiKeyPanelWidth + 3, thresholdLineY + 8);
 
     //Draw emoji color key panel backgrounds
     colorRect(0, height - (emojiKeyPanelHeight * 4), emojiKeyPanelWidth, emojiKeyPanelHeight, '#ed8300');
